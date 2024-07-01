@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishwas Pandey - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="intro">
+        <h1>Hi all, I'm Vishwas Pandey <span>👋</span></h1>
+        <p>A student at Amity University, passionate about Web Development, Cyber Security, DSA using C++, and Mobile Development.</p>
+        <div class="social-links">
+            <a href="https://github.com/your-github" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+            <a href="mailto:your-email@example.com">Email</a>
+        </div>
+        <div class="buttons">
+            <a href="#contact" class="btn">Contact Me</a>
+            <a href="resume.pdf" class="btn" target="_blank">See My Resume</a>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Web Development</li>
+            <li>Cyber Security</li>
+            <li>DSA using C++</li>
+            <li>Mobile Development</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- Add your projects here -->
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <script >
+        document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Message sent!');
+});
+
+    </script>
+</body>
+</html>
